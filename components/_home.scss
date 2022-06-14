@@ -1,0 +1,30 @@
+header {
+  div {
+    background-color: $color-principal;
+  }
+}
+.btn-mod {
+  color: $color-principal;
+  background-color: $color-secundario;
+  border-color: $color-secundario;
+  &:hover {
+    background-color: darken($color-secundario, 10%);
+  }
+}
+footer {
+  background-color: $color-principal;
+} 
+i {
+  color: $color-secundario;
+  font-size: 30px;
+  position: fixed;
+  right: 15px;
+  bottom: 5px;
+}
+h4:hover::after {
+  content: "☺";
+}
+h4::selection {
+  background-color: $color-selection;
+  color: white;
+}
